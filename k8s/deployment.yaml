@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: microservicio-python
-        image: microservicio-python:latest
+        image: python:3.8-slim
         ports:
         - containerPort: 5000
         env:
