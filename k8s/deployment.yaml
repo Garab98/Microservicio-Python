@@ -14,12 +14,9 @@ spec:
     spec:
       containers:
       - name: microservicio-python
-        image: python:3.8-slim
+        image: microservicio-python:latest
         ports:
         - containerPort: 5000
-        env:
-        - name: MONGO_URL
-          value: "mongodb://mongo:27017/users"
 ---
 apiVersion: v1
 kind: Service
