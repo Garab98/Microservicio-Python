@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: microservicio-python
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: microservicio-python
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: microservicio-python
-        image: microservicio-python:latest
+        image: mopito/tfm:python
         ports:
         - containerPort: 5000
 ---
